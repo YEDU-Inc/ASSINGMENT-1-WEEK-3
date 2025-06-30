@@ -1,24 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Conference ticket generator</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Conference ticket generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="padding: 0; margin: 0">
+    <section
+      style="
+        width: 100vw;
+        height: 100vh;
+        background-image: url('./assets/images/pattern-lines.svg'),
+          url('./assets/images/background-desktop.png');
+        background-position: center;
+        background-size: cover;
+        position: relative;
+      "
+    >
+      <img
+        src="./assets/images/pattern-squiggly-line-bottom-desktop.svg"
+        alt=""
+        style="position: absolute; bottom: 0px; z-index: 0"
+      />
+      <img
+        src="./assets/images/pattern-squiggly-line-top.svg"
+        style="position: absolute; right: 0px; z-index: 0"
+        alt=""
+      />
+      <section
+        style="
+          height: 100vh;
+          width: 100vw;
+          display: flex;
+          justify-content: center;
+          overflow: auto;
+        "
+      >
+        <main
+          style="
+            color: white;
+            font-family: 'Inconsolata', monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 40%;
+            padding-top: 50px;
+            z-index: 2;
+          "
+        >
+          <img
+            src="./assets/images/logo-full.svg"
+            style="width: 200px"
+            alt=""
+          />
+          <div>
+            <h1 style="font-size: 49px">
+              Congrats, Daniel! Your ticket is ready
+            </h1>
+            <p>
+              We've emailed your ticket to Email Address to
+              <span style="color: hsl(7, 71%, 60%)"
+                >mickdaniel01@gmail.com </span
+              >and will send updates in the run up to the event
+            </p>
+          </div>
+          <div
+            style="
+              background-image: url('./assets/images/pattern-ticket.svg');
+              min-height: 280px;
+              min-width: 600px;
+              display: flex;
+              justify-content: space-between;
+            "
+          >
+            <div
+              style="
+                padding: 16px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+              "
+            >
+              <div>
+                <img src="./assets/images/logo-full.svg" alt="" />
+                <p style="position: relative; left: 46px">
+                  Jan 31, 2025 / Austin, TX
+                </p>
+              </div>
+              <div style="text-align: left; display: flex; gap: 10px">
+                <img
+                  src="./assets/images/image-avatar.jpg"
+                  style="width: 60px; border-radius: 10px"
+                  alt=""
+                />
+                <div style="display: flex; flex-direction: column">
+                  <span style="font-size: 22px">Daniel</span>
+                  <span
+                    ><img src="./assets/images/icon-github.svg" alt="" />
+                    <span>mickdaniel01@gmail.com</span></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                width: 19%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <p
+                style="
+                  transform: rotate(90deg);
+                  font-size: 28px;
+                  color: rgba(255, 255, 255, 0.288);
+                "
+              >
+                #01609
+              </p>
+            </div>
+          </div>
+        </main>
+      </section>
+    </section>
+    <!-- Form starts -->
 
-  <!-- Form starts -->
-
-  Your Journey to Coding Conf 2025 Starts Here!
+    <!-- Your Journey to Coding Conf 2025 Starts Here!
 
   Secure your spot at next year's biggest coding conference.
 
@@ -34,24 +158,28 @@
   GitHub Username
   @yourusername
 
-  Generate My Ticket
+  Generate My Ticket -->
 
-  <!-- Form ends -->
+    <!-- Form ends -->
 
-  <!-- Generated tickets starts -->
+    <!-- Generated tickets starts -->
 
-  Congrats, <!-- Full Name -->! Your ticket is ready.
+    <!-- Congrats,  -->
+    <!-- Full Name -->
+    <!-- ! Your ticket is ready. -->
 
-  We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
+    <!-- We've emailed your ticket to 
+    Email Address
+    and will send updates in the run up to the event. -->
 
-  Coding Conf
-  Jan 31, 2025 / Austin, TX
+    <!-- Coding Conf
+  Jan 31, 2025 / Austin, TX -->
 
-  <!-- Generated tickets ends -->
-  
-  <div class="attribution">
+    <!-- Generated tickets ends -->
+
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </div> -->
+  </body>
 </html>
